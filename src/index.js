@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import App from './App';
 
 ReactDOM.render(
-    <div>
-      Приложение работает!
-    </div>,
+    React.createElement('button', {
+      disabled: true
+    }),
   document.getElementById('root')
 );
