@@ -1,10 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
 
 ReactDOM.render(
-    React.createElement('button', {
-      disabled: true
-    }),
-  document.getElementById('root')
+  React.createElement(
+    "button",
+    {
+      disabled: true,
+    },
+    "Нажми на меня!"
+  ),
+  document.getElementById("root")
 );
