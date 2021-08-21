@@ -6,7 +6,7 @@ ReactDOM.render(
   React.createElement(
     "button",
     {
-      disabled: true,
+      onClick: () => console.log('CLICK'),
     },
     "Нажми на меня!"
   ),
