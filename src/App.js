@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PostItem from "./components/PostItem";
+import PostList from "./components/PostList";
 import "./styles/App.css";
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
   )
   return (
     <div className="App">
-      
+      <PostList posts={posts} title="Список постов 1"/>
     </div>
   );
 }
