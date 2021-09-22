@@ -14,9 +14,8 @@ function App() {
   return (
     <div className="App">
       <form>
-        <MyInput value={"sdfsdfsfsdfsdf"}placeholder={"Название поста"} />
-        <MyInput />
-        <MyInput value={"123"} placeholderText="sdlkfjsldfkj6546546sdlfjsdlf" />
+        <MyInput placeholder="Название поста" />
+        <MyInput placeholder="Описание поста" />
         <MyButton>Создать пост</MyButton>
       </form>
       <PostList posts={posts} title="Посты про JS" />
