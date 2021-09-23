@@ -11,12 +11,19 @@ function App() {
     { id: 2, title: "Javascript 2", body: "Description" },
     { id: 3, title: "Javascript 3", body: "Description" },
   ]);
+
+  const [title, setTitle] = useState('lkjlkjljlk')
+
+  const addNewPost = () => {
+
+  }
+
   return (
     <div className="App">
       <form>
-        <MyInput placeholder="Название поста" />
+        <MyInput placeholder="Название поста" type="text" value={title}/>
         <MyInput placeholder="Описание поста" />
-        <MyButton>Создать пост</MyButton>
+        <MyButton onClick={addNewPost}>Создать пост</MyButton>
       </form>
       <PostList posts={posts} title="Посты про JS" />
     </div>
